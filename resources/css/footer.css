@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 .fixed-footer {
     align-items: center;
     background-color: #5b639c;
