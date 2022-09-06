@@ -8,6 +8,14 @@
     <title>Principal</title>
 </head>
 <body>
-    <x-header></x-header>
+    <x-header></x-header>    
+    <br><br><br><br>
+     <x-form-login></x-form-login>
+
 </body>
+
+<footer>
+    <x-footer></x-footer>
+</footer>
+
 </html>
