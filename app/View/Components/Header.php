@@ -11,9 +11,10 @@ class Header extends Component
      *
      * @return void
      */
+
     public function __construct()
     {
-        //
+       
     }
 
     /**

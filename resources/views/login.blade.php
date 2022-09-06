@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--<link rel="stylesheet" href="http://localhost/inventario/resources/css/principal.css">-->
-    <title>Principal</title>
+    <title>Login</title>
 </head>
+
 <body>
-    <x-header></x-header> 
+    <x-header ></x-header> 
     <br><br><br><br><br><br>
-     <x-form-login></x-form-login>
+    <x-form-login></x-form-login>
 
 </body>
 
