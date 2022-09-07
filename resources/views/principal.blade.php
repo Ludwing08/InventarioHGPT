@@ -16,6 +16,8 @@
 </head>
 <body>
     <livewire:header></livewire:header>
+    <br>
+    <livewire:equipos-table></livewire:equipos-table>
 </body>
 
 <footer>
