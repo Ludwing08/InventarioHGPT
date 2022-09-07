@@ -4,15 +4,19 @@
 
 .fixed-footer {
     align-items: center;
-    background-color: #95b8f6;
+
+    background-color: rgb(240, 235, 235);
     bottom: 0;
-    color: whitesmoke;
+    color: black;
+
     display: flex;
-    font-size: 5em;
+    font-size: 15px;
     height: 10%;
     justify-content: center;
     position: fixed;
     text-transform: uppercase;
     width: 100%;
+
   }
+
   

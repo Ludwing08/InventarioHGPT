@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,59 +6,75 @@ body{
 }
 
 
-/*img{
-    width: 75px;
-    height: 75px;
-}*/
 
-header{
+
+header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
-    padding: 15px 50px;
+    padding: 15px 45px;
     z-index: 10;
     background: rgb(240, 235, 235);
 }
 
-header .Logo{
+header .Logo {
     position: relative;
     font-size: 1.5em;
     color: black;
+    align-content: flex-start;
     text-decoration: none;
     font-weight: 600;
 }
 
-header .navegacion{
+
+header .titulo {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 10px 0;
 }
 
-header .navegacion li{
+header .titulo li {
     list-style: none;
-    margin: 0 10px;
+    margin: 0 -10px;
 }
 
-header .navegacion li a{
+header .titulo li a {
     color: black;
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
 }
 
-header .navegacion li a:hover{
+header .navegacion {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .navegacion li {
+    list-style: none;
+}
+
+header .navegacion li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+header .navegacion li a:hover {
     color: #2ba12b;
 }
 
-
+/*
 header .Buscador{
     position: relative;
-    width: 300px;
+    width: 200px;
     height: 40px;
     
 }
@@ -75,7 +91,7 @@ header .Buscador input{
     outline: none;
     border: 1px solid black;
     border-radius: 4px;
-    padding: 0 10px 0 45px;
+    padding: 0 10px 0 40px;
 }
 
 header .Buscador input::placeholder{
@@ -85,11 +101,11 @@ header .Buscador input::placeholder{
 .input-icon {
     color: rgb(8, 8, 8);
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
     border-right: 1px solid #fff;
     padding-right: 10px;
-}
+}*/

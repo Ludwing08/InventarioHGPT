@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('principal');
+
+
+Route::get('/', function () {   
+    return view('login');
+});
+
+Route::get('/principal', function () {
+    $aux = 1;
+    return view('principal', compact('aux'));
 });
