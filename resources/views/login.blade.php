@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <x-header ></x-header> 
+    <livewire:header></livewire:header>
     <br><br><br><br><br><br>
     <x-form-login></x-form-login>
 
