@@ -27,8 +27,19 @@ class EquiposTable extends DataTableComponent
             Column::make("Dominio", "Dominio")
                 ->sortable(),
             Column::make("Dirección IP", "DireccionIP")
-            ->sortable()        
+            ->sortable(),
+
+            Column::make('Acciones')
+            ->sortable()
+            ->format(function($value,$column, $row){
+                return view('botones')->withUser($row);
+            })           
         ];
+    }
+
+    public function query():Builder
+    {
+        return Equipo::query();
     }
 
 }
