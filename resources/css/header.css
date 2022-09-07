@@ -9,7 +9,7 @@ body {
 
 
 header {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -21,14 +21,6 @@ header {
     background: rgb(240, 235, 235);
 }
 
-header .Logo {
-    position: relative;
-    font-size: 1.5em;
-    color: black;
-    align-content: flex-start;
-    text-decoration: none;
-    font-weight: 600;
-}
 
 
 header .titulo {
@@ -44,10 +36,16 @@ header .titulo li {
 
 header .titulo li a {
     color: black;
+    font-size: 30px;
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
 }
+
+header .titulo li a:hover {
+    color: #003618;
+}
+
 
 header .navegacion {
     position: absolute;
@@ -68,7 +66,7 @@ header .navegacion li a {
 }
 
 header .navegacion li a:hover {
-    color: #2ba12b;
+    color: #003618;
 }
 
 /*

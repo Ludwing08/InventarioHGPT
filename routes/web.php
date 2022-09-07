@@ -16,10 +16,21 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {   
-    return view('login');
+    return view('detalleequipos');
 });
 
 Route::get('/principal', function () {
-    $aux = 1;
-    return view('principal', compact('aux'));
+    return view('principal');
 });
+
+Route::get('/detalleequipos', function () {
+    return view('detalleequipos');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
