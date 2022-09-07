@@ -6,14 +6,14 @@
 <body>
     <header>
       
-        <a href="#">
-          <img src="http://localhost/inventariohgpt/resources/imagenes/LogoHGPT1.png" alt="">
+        <a href="/a">
+          <img src="http://localhost/inventariohgpt/resources/imagenes/LogoHGPT1.png" alt="" class="Logo">
         </a>
         <ul class="titulo">
-         <li><a href="#">H.G.P.T.</a></li>
+         <li><a href="/principal">H.G.P.T.</a></li>
        </ul>
        <ul class="navegacion">
-         <li><a href="#">Inicio</a></li>
+         <li><a href="/principal">Inicio</a></li>
        </ul>
        
        <!--<div class="Buscador">

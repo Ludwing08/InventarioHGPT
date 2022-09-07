@@ -4,9 +4,9 @@
 
 .fixed-footer {
     align-items: center;
-    background-color: rgb(240, 235, 235);
+    background-color: #003618;
     bottom: 0;
-    color: black;
+    color: white;
     display: flex;
     font-size: 15px;
     height: 10%;
