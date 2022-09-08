@@ -1,4 +1,4 @@
-body {
+.general {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@ body {
 
 
 
-header {
+.general header {
     position: relative;
     top: 0;
     left: 0;
@@ -23,18 +23,17 @@ header {
 
 
 
-header .titulo {
+.general header .titulo {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin-top: 15px;
 }
 
-header .titulo li {
-    list-style: none;
+.general header .titulo li {
+    list-style: none;   
     margin: 0 -10px;
 }
 
-header .titulo li a {
+.general header .titulo li a {
     color: black;
     font-size: 30px;
     text-decoration: none;
@@ -42,68 +41,29 @@ header .titulo li a {
     letter-spacing: 1px;
 }
 
-header .titulo li a:hover {
+.general header .titulo li a:hover {
     color: #003618;
 }
 
 
-header .navegacion {
+.general header .navegacion {
     position: absolute;
-    top: 35%;
-    left: 50%;
+    top: 50%;
+    left: 49%;
   transform: translate(-50%, -50%);
 }
 
-header .navegacion li {
+.general header .navegacion li {
     list-style: none;
 }
 
-header .navegacion li a {
+.general header .navegacion li a {
     color: black;
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
 }
 
-header .navegacion li a:hover {
+.general header .navegacion li a:hover {
     color: #003618;
 }
-
-/*
-header .Buscador{
-    position: relative;
-    width: 200px;
-    height: 40px;
-    
-}
-
-
-header .Buscador input{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: black;
-    background: transparent;
-    outline: none;
-    border: 1px solid black;
-    border-radius: 4px;
-    padding: 0 10px 0 40px;
-}
-
-header .Buscador input::placeholder{
-    color: rgb(8, 8, 8);
-}
-
-.input-icon {
-    color: rgb(8, 8, 8);
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-right: 1px solid #fff;
-    padding-right: 10px;
-}*/
