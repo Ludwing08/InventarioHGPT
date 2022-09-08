@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {   
-    return view('detalleequipos');
+    return view('livewire.pantalla-equipo');
 });
 
 Route::get('/principal', function () {
