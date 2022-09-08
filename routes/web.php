@@ -1,11 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EquipoController;
 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
-|--------------------------------------------------------------------------
+|-------------------------------------------    -------------------------------
 |
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
@@ -14,23 +15,28 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+Route::get('/equipos', [EquipoController::class, 'index']);
 
-Route::get('/', function () {   
-    return view('detalleequipos');
-});
 
-Route::get('/principal', function () {
-    return view('principal');
-});
 
-Route::get('/detalleequipos', function () {
-    return view('detalleequipos');
-});
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/a', function () {   
+    return view('livewire.detalle');
+})->name('aa');
 
-Auth::routes();
+// Route::get('/principal', function () {
+//     return view('principal');
+// });
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/detalleequipos', function () {
+//     return view('detalleequipos');
+// });
+
+// Auth::routes(
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

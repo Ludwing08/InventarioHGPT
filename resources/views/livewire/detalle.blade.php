@@ -1,3 +1,10 @@
+@extends('layouts.app')
+
+@section('content')
+
 <div>
-    {{-- The whole world belongs to you. --}}
+    
+    {{ $equipos -> Secuencial }}
 </div>
+
+@endsection

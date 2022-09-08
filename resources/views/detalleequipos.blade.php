@@ -11,6 +11,8 @@
     <div><livewire:header></livewire:header></div>
     <div><livewire:navbar></livewire:navbar></div>
     
+    @livewire('detalle')
+
     <x-footer></x-footer>
 </body>
 </html>
