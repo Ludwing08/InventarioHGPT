@@ -22,8 +22,7 @@
             <div class="card text-center border-success mb-3">
                 <div class="card-header bg-success">
                     Datos generales del equipo
-                    {{ $equipo->Secuencial }}
-                    {{ $equipo->Nombre }}
+
                 </div>
                 <div class="card-body">
                     <div class="detalles">

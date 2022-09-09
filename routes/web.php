@@ -34,6 +34,10 @@ Route::get('/datosequipo', function () {
     return view('datosequipo');
 });
 
+Route::get('/a', function () {
+    return view('detalleequipos');
+});
+
 //Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
