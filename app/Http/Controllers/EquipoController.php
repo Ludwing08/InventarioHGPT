@@ -63,7 +63,7 @@ class EquipoController extends Controller
         ->where('e.Secuencial', $id)
         ->first();
 
-        return view ('livewire.detalle', compact('equipo'));
+        return view ('detalleequipos', compact('equipo'));
     }
 
     /**

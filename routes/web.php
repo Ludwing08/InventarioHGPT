@@ -30,15 +30,11 @@ Route::get('/principal', function () {
 //     return view('detalleequipos');
 // });
 
-<<<<<<< HEAD
-// Auth::routes(
-=======
 Route::get('/datosequipo', function () {
     return view('datosequipo');
 });
 
-Auth::routes();
->>>>>>> origin/Alex
+//Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
