@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {   
-    return view('livewire.pantalla-equipo');
+    return view('detalleequipos');
 });
 
 Route::get('/principal', function () {
@@ -25,6 +25,10 @@ Route::get('/principal', function () {
 
 Route::get('/detalleequipos', function () {
     return view('detalleequipos');
+});
+
+Route::get('/datosequipo', function () {
+    return view('datosequipo');
 });
 
 Auth::routes();

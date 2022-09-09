@@ -1,7 +1,57 @@
-.t {
+.dprincipal{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dprincipal .datos{
+  display: flex;
+  flex-direction: row;
+}
+
+.nombreEquipo {
     position: absolute;
-    top: 50%;
+    margin-top: 15px;
     left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
+    transform: translate(-50%);
+}
+
+.dequipo{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  left: 10%;
+  text-align: center;
+}
+
+.responsable{
+  position: relative;
+  margin-top: 100px;
+  left: 5%;
+  text-align: center;
+}
+
+.detalles{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.detalles .card-title{
+  position: absolute;
+}
+
+.detalles p{
+  margin-left: 150px;
+} 
+
+
+.dequipo .card{
+  margin-left: 50px;
+  height: fit-content;
+}
+
+.dequipo .card-header{
+  color: white;
+}
