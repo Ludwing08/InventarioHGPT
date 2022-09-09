@@ -46,7 +46,7 @@
 </div>
 
 <nav class="navbar navbar-light bg-light" style="height: 100vh; display:flex; flex-direction:column; align-self: flex-start">
-  <div class="container-fluid" style="">
+  <div class="container-fluid">
     <button class="navbar-toggler first-button" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarToggleExternalContent"
         aria-controls="navbarToggleExternalContent" aria-expanded="false"

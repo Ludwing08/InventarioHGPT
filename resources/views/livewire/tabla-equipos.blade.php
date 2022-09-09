@@ -1,4 +1,8 @@
 
+@extends('layouts.app')
+
+@section('content')
+
 <div class="row d-flex justify-content-center d-flex align-items-center" style="width:100%;" >
     <div class="col-md-8">
         <div class="mt-2 table-responsive-md">
@@ -24,8 +28,8 @@
 
 
                             <td>
-                            <a href="{{ route('aa') }}" style="text-decoration:none; color:black" >  
-                            <button type="submit" class="btn btn-warning" wire:click="mostrar({{ $equipo-> Secuencial }})">
+                            <a href="{{ route('equipos.show', $equipo->Secuencial) }}" style="text-decoration:none; color:black" >  
+                            <button name="name" type="submit" class="btn btn-warning">
                                    Mostrar                                
                             </button>
                                 </a>    
@@ -39,3 +43,7 @@
     </div>
 
 </div>
+
+<x-footer></x-footer>
+
+@endsection

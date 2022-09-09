@@ -2,29 +2,26 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Equipo;
 use Illuminate\Http\Request;
+use App\Models\Accesorio;
 use Illuminate\Support\Facades\DB;
 
-
-class EquipoController extends Controller
+class AccesorioController extends Controller
 {
-    /**
+     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    public function render(){
+        
+    }
     public function index()
     {
         //
-        $equipos= DB::table('equipos as e')
-        ->join('responsable as r', 'e.CedulaResponsable','=', 'r.Cedula')
-        ->join('departamento as d', 'd.Secuencial', '=', 'r.SecuencialDepartamento')
-        ->orderby('d.NombreDepartamento', 'asc')
-        ->select('e.Secuencial', 'd.NombreDepartamento', DB::raw("CONCAT(r.PrimerNombre, ' ',r.ApellidoPaterno, ' ', r.ApellidoMaterno ) AS NombreCompleto"), 'e.Nombre', 'e.DireccionIP')
-        ->get();
+        $accesorios = DB::select("Select * from accesorios");
+        return view('components.crear-accesorio', compact('accesorios'));
 
-        return view('livewire.tabla-equipos', compact('equipos'));
     }
 
     /**
@@ -51,28 +48,22 @@ class EquipoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Equipo  $equipo
+     * @param  \App\Models\Accesorio  $accesorio
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
         
-       // $equipo=Equipo::find($Secuencial);
-        // return view ('livewire.detalle', compact('equipo'));
-        $equipo = DB::table('equipos as e')
-        ->where('e.Secuencial', $id)
-        ->first();
 
-        return view ('livewire.detalle', compact('equipo'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Equipo  $equipo
+     * @param  \App\Models\Accesorio  $accesorio
      * @return \Illuminate\Http\Response
      */
-    public function edit(Equipo $equipo)
+    public function edit(Accesorio $accesorio)
     {
         //
     }
@@ -81,10 +72,10 @@ class EquipoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Equipo  $equipo
+     * @param  \App\Models\Accesorio  $accesorio
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Equipo $equipo)
+    public function update(Request $request, Accesorio $accesorio)
     {
         //
     }
@@ -92,11 +83,13 @@ class EquipoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Equipo  $equipo
+     * @param  \App\Models\Accesorio  $accesorio
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Equipo $equipo)
+    public function destroy(Accesorio $accesorio)
     {
         //
     }
 }
+
+

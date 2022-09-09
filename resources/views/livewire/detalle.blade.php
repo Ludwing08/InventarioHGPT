@@ -2,9 +2,15 @@
 
 @section('content')
 
+
 <div>
     
-    {{ $equipos -> Secuencial }}
+   {{ $equipo->Secuencial }}
+   {{ $equipo->Nombre }}
+
+   <div>
+
+   </div>
 </div>
 
 @endsection

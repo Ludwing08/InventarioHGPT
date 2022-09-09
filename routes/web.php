@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EquipoController;
+use App\Http\Controllers\AccesorioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,19 +16,15 @@ use App\Http\Controllers\EquipoController;
 */
 
 
-Route::get('/equipos', [EquipoController::class, 'index']);
+Route::resource('/equipos', EquipoController::class);
+
+Route::resource('/accesorios', AccesorioController::class);
 
 
 
-
-
-Route::get('/a', function () {   
-    return view('livewire.detalle');
-})->name('aa');
-
-// Route::get('/principal', function () {
-//     return view('principal');
-// });
+Route::get('/principal', function () {
+    return view('vistaprueba');
+});
 
 // Route::get('/detalleequipos', function () {
 //     return view('detalleequipos');
