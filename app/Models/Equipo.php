@@ -46,6 +46,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Equipo extends Model
 {
+	
+
 	protected $table = 'equipos';
 	protected $primaryKey = 'Secuencial';
 	public $incrementing = false;

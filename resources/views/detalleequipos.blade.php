@@ -14,7 +14,10 @@
             <livewire:navbar></livewire:navbar>
         </div>
         <div class="equipo">
-            <livewire:pantalla-equipo></livewire:pantalla-equipo>
+            <?php
+                $aux = $equipo->Secuencial
+            ?>
+            <livewire:pantalla-equipo aux='{{$aux}}'></livewire:pantalla-equipo>
         </div>
     </div>
     

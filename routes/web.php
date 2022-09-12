@@ -23,7 +23,7 @@ Route::resource('/accesorios', AccesorioController::class);
 
 
 Route::get('/principal', function () {
-    return view('vistaprueba');
+    return view('detalleequipos');
 });
 
 // Route::get('/detalleequipos', function () {
