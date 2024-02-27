@@ -1,64 +1,44 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Sistema de Inventario de Equipos Informáticos para la Institución H. Gobierno Provincial de Tungurahua
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este proyecto es un sistema de inventario de equipos informáticos desarrollado para la Institución H. Gobierno Provincial de Tungurahua. El sistema ha sido construido utilizando el framework Laravel y la librería Livewire para facilitar la interacción en tiempo real con los datos. A continuación, se detallan los aspectos clave del desarrollo.
 
-## About Laravel
+## Descripción del Proyecto
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+El objetivo principal de este proyecto es proporcionar a la Institución H. Gobierno Provincial de Tungurahua una herramienta eficiente para gestionar su inventario de equipos informáticos. El sistema permite llevar un registro detallado de los equipos, gestionar su asignación y mantenimiento, así como generar informes para facilitar la toma de decisiones.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Tecnologías Utilizadas
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Laravel**: Se ha utilizado el framework de desarrollo web PHP Laravel para la construcción del backend del sistema. Laravel proporciona una estructura sólida y herramientas poderosas que facilitan el desarrollo rápido y eficiente de aplicaciones web.
 
-## Learning Laravel
+- **Livewire**: Livewire se ha empleado para la construcción de componentes interactivos en tiempo real. Esta librería permite crear interfaces de usuario dinámicas sin necesidad de escribir código JavaScript, lo que simplifica el desarrollo y mejora la experiencia del usuario.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Requerimientos del Sistema
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+El desarrollo del sistema se basó en los siguientes requerimientos:
 
-## Laravel Sponsors
+- **Gestión de Usuarios**: El sistema debe permitir la creación, edición y eliminación de usuarios con diferentes niveles de acceso, como administradores, técnicos y personal de mantenimiento.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- **Gestión de Equipos**: Debe ser posible agregar, editar y eliminar equipos informáticos del inventario, así como llevar un registro detallado de su estado, especificaciones técnicas y ubicación.
 
-### Premium Partners
+- **Asignación de Equipos**: Se requiere la capacidad de asignar equipos a usuarios específicos, registrar el historial de asignaciones y gestionar la disponibilidad de los equipos.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+- **Mantenimiento de Equipos**: Debe ser posible registrar las actividades de mantenimiento realizadas en cada equipo, incluyendo reparaciones, actualizaciones y revisiones periódicas.
 
-## Contributing
+## Diseño de la Base de Datos
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+El diseño de la base de datos del sistema sigue una estructura relacional que incluye las siguientes tablas principales:
 
-## Code of Conduct
+- **Usuarios**: Almacena la información de los usuarios del sistema, incluyendo su nombre, correo electrónico y rol.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- **Equipos**: Contiene los detalles de los equipos informáticos en el inventario, como número de serie, modelo, estado, etc.
 
-## Security Vulnerabilities
+- **Asignaciones**: Registra las asignaciones de equipos a usuarios específicos, junto con información relevante como la fecha de asignación y el estado del equipo.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- **Mantenimientos**: Almacena el historial de actividades de mantenimiento realizadas en cada equipo, incluyendo la fecha, tipo de mantenimiento y observaciones.
 
-## License
+Para obtener más detalles sobre la estructura de la base de datos, consultar el archivo `database_schema.sql` incluido en el repositorio.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Contribución
+
+- Ludwing Barriga
+- Javier Jiménez
